@@ -30,7 +30,7 @@ namespace SQ1_TDD
         }
         public void calculateArea()
         {
-            Area = 0.5 * sideA * sideB;
+            Area = Math.Abs(0.5 * Math.Round(sideA, 3) * Math.Round(sideB, 3));
         }
     }
 }
