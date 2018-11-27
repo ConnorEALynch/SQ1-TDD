@@ -30,7 +30,10 @@ namespace SQ1_TDD
         private void CalculateSide_Click(object sender, RoutedEventArgs e)
         {
             Triangle myTriangle = new Triangle();
+            myTriangle.sideA = double.Parse(SideA.Text);
+            myTriangle.sideB = double.Parse(SideB.Text);
             myTriangle.calculateHypotenuse();
+            SideResult.Text = myTriangle.sideC.ToString();
             myTriangle.calculateArea();
         }
 

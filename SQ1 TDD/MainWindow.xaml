@@ -17,9 +17,9 @@
         <TextBlock HorizontalAlignment="Left" Margin="110,44,0,0" TextWrapping="Wrap" Text="Side A" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="632,128,0,0" TextWrapping="Wrap" Text="Angle B" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="633,47,0,0" TextWrapping="Wrap" Text="Angle A" VerticalAlignment="Top"/>
-        <TextBox Name ="AngleResult" HorizontalAlignment="Left" Height="23" Margin="308,225,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"  IsReadOnly="True"/>
-        <TextBox Name ="SideResult" HorizontalAlignment="Left" Height="23" Margin="308,80,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" IsReadOnly="True"/>
-        <TextBox Name ="Area" HorizontalAlignment="Left" Height="23" Margin="308,160,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"  IsReadOnly="True"/>
+        <TextBox Name ="AngleResult" HorizontalAlignment="Left" Height="23" Margin="308,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"  IsReadOnly="True"/>
+        <TextBox Name ="SideResult" HorizontalAlignment="Left" Height="23" Margin="308,80,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" IsReadOnly="True"/>
+        <TextBox Name ="Area" HorizontalAlignment="Left" Height="23" Margin="308,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"  IsReadOnly="True"/>
         <TextBlock HorizontalAlignment="Left" Margin="342,204,0,0" TextWrapping="Wrap" Text="Third angle" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="342,125,0,0" TextWrapping="Wrap" Text="Area" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="342,44,0,0" TextWrapping="Wrap" Text="Third angle" VerticalAlignment="Top"/>

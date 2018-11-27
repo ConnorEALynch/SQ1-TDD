@@ -8,24 +8,27 @@ namespace SQ1_TDD
 {
     class Triangle
     {
-        double sideA { get; set; }
-        double sideB { get; set; }
-        double sideC { get; set; }
+        public double sideA { get; set; }
+        public double sideB { get; set; }
+        public double sideC { get; set; }
         double angleA { get; set; }
         double angleB { get; set; }
-        double angleC { get; set; }
+        public double angleC { get; set; }
+        public double Area { get; set; }
 
-        public double calculateAngle()
+        public void calculateAngle()
         {
-            return 0;
+            
         }
-        public double calculateHypotenuse()
+        public void calculateHypotenuse()
         {
-            return 0;
+            double intermediate = Math.Pow(sideA,2) + Math.Pow(sideB, 2);
+            sideC = Math.Sqrt(intermediate);
+            
         }
-        public double calculateArea()
+        public void calculateArea()
         {
-            return 0;
+            
         }
     }
 }
