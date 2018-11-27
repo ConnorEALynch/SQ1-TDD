@@ -65,5 +65,31 @@ namespace SQ1_TDD.Tests
             Assert.AreEqual(15, myTriangle.Area);
         }
 
+        [TestMethod()]
+        public void calculateAngleTest()
+        {
+            //arange
+            Triangle myTriangle = new Triangle();
+            myTriangle.angleA = 30;
+            myTriangle.angleB = 80;
+            //act
+            myTriangle.calculateAngle();
+
+            //assert
+            Assert.AreEqual(70, myTriangle.angleC);
+        }
+        [TestMethod()]
+        public void calculateAngleNegativeTest()
+        {
+            //arange
+            Triangle myTriangle = new Triangle();
+            myTriangle.angleA = -30;
+            myTriangle.angleB = 80;
+            //act
+            myTriangle.calculateAngle();
+
+            //assert
+            Assert.AreEqual(70, myTriangle.angleC);
+        }
     }
 }
