@@ -23,16 +23,19 @@ namespace SQ1_TDD
         public MainWindow()
         {
             InitializeComponent();
+           
+
         }
 
         private void CalculateSide_Click(object sender, RoutedEventArgs e)
         {
-
+            Triangle myTriangle = new Triangle();
+            myTriangle.calculateHypotenuse();
+            myTriangle.calculateArea();
         }
 
         private void CalculateAngle_Click(object sender, RoutedEventArgs e)
         {
-
         }
     }
 }
