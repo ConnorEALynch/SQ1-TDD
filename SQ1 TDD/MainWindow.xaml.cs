@@ -35,6 +35,7 @@ namespace SQ1_TDD
             myTriangle.calculateHypotenuse();
             SideResult.Text = myTriangle.sideC.ToString();
             myTriangle.calculateArea();
+            Area.Text = myTriangle.Area.ToString();
         }
 
         private void CalculateAngle_Click(object sender, RoutedEventArgs e)
