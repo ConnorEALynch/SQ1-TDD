@@ -28,7 +28,7 @@ namespace SQ1_TDD
         }
         public void calculateArea()
         {
-            
+            Area = 0.5 * sideA * sideB;
         }
     }
 }
