@@ -35,7 +35,7 @@ namespace SQ1_TDD.Tests
             myTriangle.calculateHypotenuse();
 
             //assert        10000.0012499999
-            Assert.AreEqual(10000.0012499999, myTriangle.sideC);
+            Assert.AreEqual(10000.001, myTriangle.sideC);
         }
     }
 }

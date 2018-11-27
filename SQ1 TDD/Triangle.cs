@@ -25,7 +25,7 @@ namespace SQ1_TDD
         public void calculateHypotenuse()
         {
             double intermediate = Math.Pow(sideA,2) + Math.Pow(sideB, 2);
-            sideC = Math.Sqrt(intermediate);
+            sideC = Math.Round(Math.Sqrt(intermediate),3);
             
         }
         public void calculateArea()
