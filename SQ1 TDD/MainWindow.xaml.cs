@@ -40,6 +40,11 @@ namespace SQ1_TDD
 
         private void CalculateAngle_Click(object sender, RoutedEventArgs e)
         {
+            Triangle myTriangle = new Triangle();
+            myTriangle.angleA = double.Parse(AngleA.Text);
+            myTriangle.angleB = double.Parse(AngleB.Text);
+            myTriangle.calculateAngle();
+            AngleResult.Text = myTriangle.angleC.ToString();
         }
     }
 }

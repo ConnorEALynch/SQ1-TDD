@@ -6,19 +6,21 @@ using System.Threading.Tasks;
 
 namespace SQ1_TDD
 {
-    class Triangle
+    public class Triangle
     {
         public double sideA { get; set; }
         public double sideB { get; set; }
         public double sideC { get; set; }
-        double angleA { get; set; }
-        double angleB { get; set; }
+        public double angleA { get; set; }
+        public double angleB { get; set; }
         public double angleC { get; set; }
         public double Area { get; set; }
 
         public void calculateAngle()
         {
-            
+            double remainingDegrees = 180;
+            remainingDegrees -= angleA;
+            angleC = remainingDegrees - angleB;
         }
         public void calculateHypotenuse()
         {
