@@ -19,8 +19,8 @@ namespace SQ1_TDD
         public void calculateAngle()
         {
             double remainingDegrees = 180;
-            remainingDegrees -= angleA;
-            angleC = remainingDegrees - angleB;
+            remainingDegrees -= Math.Abs(angleA);
+            angleC = remainingDegrees - Math.Abs(angleB);
         }
         public void calculateHypotenuse()
         {

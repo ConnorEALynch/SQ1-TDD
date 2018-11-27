@@ -23,6 +23,7 @@
         <TextBlock HorizontalAlignment="Left" Margin="342,204,0,0" TextWrapping="Wrap" Text="Third angle" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="342,125,0,0" TextWrapping="Wrap" Text="Area" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="342,44,0,0" TextWrapping="Wrap" Text="Third angle" VerticalAlignment="Top"/>
+        <TextBlock Name ="ErrorMessage" HorizontalAlignment="Left" Margin="342,323,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

@@ -23,28 +23,45 @@ namespace SQ1_TDD
         public MainWindow()
         {
             InitializeComponent();
-           
+            ErrorMessage.Text = "";
 
         }
 
         private void CalculateSide_Click(object sender, RoutedEventArgs e)
         {
-            Triangle myTriangle = new Triangle();
-            myTriangle.sideA = Math.Round( double.Parse(SideA.Text), 3);
-            myTriangle.sideB = Math.Round(double.Parse(SideB.Text), 3);
-            myTriangle.calculateHypotenuse();
-            SideResult.Text = myTriangle.sideC.ToString();
-            myTriangle.calculateArea();
-            Area.Text = myTriangle.Area.ToString();
+            if (SideA.Text != null && SideB.Text != null)
+            {
+                Triangle myTriangle = new Triangle();
+                try
+                {
+                    myTriangle.sideA = Math.Round(double.Parse(SideA.Text), 3);
+                    myTriangle.sideB = Math.Round(double.Parse(SideB.Text), 3);
+                    myTriangle.calculateHypotenuse();
+                    SideResult.Text = myTriangle.sideC.ToString();
+                    myTriangle.calculateArea();
+                    Area.Text = myTriangle.Area.ToString();
+                }
+                catch(Exception excep)
+                {
+                    ErrorMessage.Text = "Invalid entry. try again";
+                }
+            }
         }
 
         private void CalculateAngle_Click(object sender, RoutedEventArgs e)
         {
-            Triangle myTriangle = new Triangle();
-            myTriangle.angleA = Math.Round(double.Parse(AngleA.Text), 3);
-            myTriangle.angleB = Math.Round(double.Parse(AngleB.Text), 3);
-            myTriangle.calculateAngle();
-            AngleResult.Text = myTriangle.angleC.ToString();
+            try
+            {
+                Triangle myTriangle = new Triangle();
+                myTriangle.angleA = Math.Round(double.Parse(AngleA.Text), 3);
+                myTriangle.angleB = Math.Round(double.Parse(AngleB.Text), 3);
+                myTriangle.calculateAngle();
+                AngleResult.Text = myTriangle.angleC.ToString();
+            }
+            catch(Exception excep)
+            {
+                ErrorMessage.Text = "Invalid entry. try again";
+            }
         }
     }
 }
