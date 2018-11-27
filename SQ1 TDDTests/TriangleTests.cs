@@ -29,13 +29,41 @@ namespace SQ1_TDD.Tests
         {
             //arange
             Triangle myTriangle = new Triangle();
-            myTriangle.sideA = -5;
+            myTriangle.sideA = 5;
             myTriangle.sideB = 10000;
             //act
             myTriangle.calculateHypotenuse();
 
-            //assert        10000.0012499999
+            //assert
             Assert.AreEqual(10000.001, myTriangle.sideC);
         }
+
+        [TestMethod()]
+        public void calculateAreaBoundryTest()
+        {
+            //arange
+            Triangle myTriangle = new Triangle();
+            myTriangle.sideA = 5;
+            myTriangle.sideB = 10000;
+            //act
+            myTriangle.calculateArea();
+
+            //assert
+            Assert.AreEqual(25000, myTriangle.Area);
+        }
+        [TestMethod()]
+        public void calculateAreaBoundryTestNegatives()
+        {
+            //arange
+            Triangle myTriangle = new Triangle();
+            myTriangle.sideA = -5;
+            myTriangle.sideB = 6;
+            //act
+            myTriangle.calculateArea();
+
+            //assert
+            Assert.AreEqual(15, myTriangle.Area);
+        }
+
     }
 }
