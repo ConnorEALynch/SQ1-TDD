@@ -91,5 +91,18 @@ namespace SQ1_TDD.Tests
             //assert
             Assert.AreEqual(70, myTriangle.angleC);
         }
+        [TestMethod()]
+        public void calculateAngleBoundryTest()
+        {
+            //arange
+            Triangle myTriangle = new Triangle();
+            myTriangle.angleA = 100;
+            myTriangle.angleB = 100;
+            //act
+            myTriangle.calculateAngle();
+
+            //assert
+            Assert.AreEqual(20, myTriangle.angleC);
+        }
     }
 }
