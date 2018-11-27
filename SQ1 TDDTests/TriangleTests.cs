@@ -102,7 +102,7 @@ namespace SQ1_TDD.Tests
             myTriangle.calculateAngle();
 
             //assert
-            Assert.AreEqual(20, myTriangle.angleC);
+            Assert.AreEqual(-20, myTriangle.angleC);
         }
     }
 }

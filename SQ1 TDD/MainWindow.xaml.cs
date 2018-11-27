@@ -55,8 +55,14 @@ namespace SQ1_TDD
                 Triangle myTriangle = new Triangle();
                 myTriangle.angleA = Math.Round(double.Parse(AngleA.Text), 3);
                 myTriangle.angleB = Math.Round(double.Parse(AngleB.Text), 3);
-                myTriangle.calculateAngle();
-                AngleResult.Text = myTriangle.angleC.ToString();
+                if (myTriangle.angleA + myTriangle.angleB <= 180)
+                {
+                    myTriangle.calculateAngle();
+                    AngleResult.Text = myTriangle.angleC.ToString();
+                }
+                else {
+                    AngleResult.Text = "Triangle is invalid";
+                }
             }
             catch(Exception excep)
             {
