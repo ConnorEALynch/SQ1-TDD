@@ -24,5 +24,15 @@ namespace SQ1_TDD
         {
             InitializeComponent();
         }
+
+        private void CalculateSide_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void CalculateAngle_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

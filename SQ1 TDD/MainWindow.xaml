@@ -11,8 +11,8 @@
         <TextBox Name ="SideB" HorizontalAlignment="Left" Height="23" Margin="80,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox Name ="AngleA" HorizontalAlignment="Left" Height="23" Margin="593,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox Name ="AngleB" HorizontalAlignment="Left" Height="23" Margin="593,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Calculate Angle" HorizontalAlignment="Left" Margin="593,220,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Calculate Side" HorizontalAlignment="Left" Margin="80,220,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button Name ="CalculateAngle" Content="Calculate Angle" HorizontalAlignment="Left" Margin="593,220,0,0" VerticalAlignment="Top" Width="120" Click="CalculateAngle_Click"/>
+        <Button Name="CalculateSide" Content="Calculate Side" HorizontalAlignment="Left" Margin="80,220,0,0" VerticalAlignment="Top" Width="120" Click="CalculateSide_Click"/>
         <TextBlock HorizontalAlignment="Left" Margin="110,125,0,0" TextWrapping="Wrap" Text="Side B" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="110,44,0,0" TextWrapping="Wrap" Text="Side A" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="632,128,0,0" TextWrapping="Wrap" Text="Angle B" VerticalAlignment="Top"/>
